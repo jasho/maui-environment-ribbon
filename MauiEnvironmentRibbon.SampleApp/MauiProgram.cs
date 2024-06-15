@@ -18,8 +18,15 @@ namespace MauiEnvironmentRibbon.SampleApp
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<Page2>();
 
-            return builder.Build();
+            var app = builder.Build();
+
+            Routing.RegisterRoute("page2", typeof(Page2));
+
+            return app;
         }
     }
 }
