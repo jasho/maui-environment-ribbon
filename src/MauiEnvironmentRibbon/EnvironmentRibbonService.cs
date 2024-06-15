@@ -5,42 +5,45 @@ namespace MauiEnvironmentRibbon;
 
 public class EnvironmentRibbonService
 {
-    private static EnvironmentRibbonConfiguration? configuration;
+    private static EnvironmentRibbonConfiguration? _configuration;
 
     public static void SetConfiguration(EnvironmentRibbonType environmentRibbonType)
     {
-        configuration ??= GetConfiguration(environmentRibbonType);
+        SetConfiguration(GetConfiguration(environmentRibbonType));
     }
 
     public static void SetConfiguration(EnvironmentRibbonConfiguration configuration)
     {
-        EnvironmentRibbonService.configuration = configuration;
+        _configuration ??= configuration;
     }
 
     private static EnvironmentRibbonConfiguration GetConfiguration(EnvironmentRibbonType environmentRibbonType)
-        => environmentRibbonType switch
+    {
+        var configuration = environmentRibbonType switch
         {
             EnvironmentRibbonType.Dev => new EnvironmentRibbonConfiguration
             {
-                Text = "Dev",
                 TextColor = Colors.White,
                 BackgroundColor = Colors.Red
             },
             EnvironmentRibbonType.Alpha => new EnvironmentRibbonConfiguration
             {
-                Text = "Alpha",
                 TextColor = Colors.White,
                 BackgroundColor = Colors.DarkOrange
             },
             EnvironmentRibbonType.Beta => new EnvironmentRibbonConfiguration
             {
-                Text = "Beta",
                 TextColor = Colors.White,
                 BackgroundColor = Colors.Green
             },
 
             _ => throw new ArgumentOutOfRangeException(nameof(environmentRibbonType))
         };
+
+        configuration.Text = AppInfo.Current.VersionString;
+
+        return configuration;
+    }
 
     public static void Shell_Navigated(object? sender, ShellNavigatedEventArgs e)
     {
@@ -60,7 +63,7 @@ public class EnvironmentRibbonService
 
     public static void AddEnvironmentRibbonToPage(Page? page)
     {
-        if (configuration is null
+        if (_configuration is null
             || page?.GetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty) is true)
         {
             return;
@@ -71,7 +74,7 @@ public class EnvironmentRibbonService
             var newRootGrid = new Grid();
 
             newRootGrid.Children.Add(contentPage.Content);
-            newRootGrid.Children.Add(new EnvironmentRibbon(configuration));
+            newRootGrid.Children.Add(new EnvironmentRibbon(_configuration));
             contentPage.Content = newRootGrid;
 
             page.SetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty, true);

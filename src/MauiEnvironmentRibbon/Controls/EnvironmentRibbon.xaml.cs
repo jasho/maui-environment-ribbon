@@ -22,11 +22,8 @@ public partial class EnvironmentRibbon
     {
         InitializeComponent();
 
-        BackgroundColor = configuration.BackgroundColor;
-
         EnvironmentLabel.Text = configuration.Text;
         EnvironmentLabel.TextColor = configuration.TextColor;
-
-        BorderStrokeShape.CornerRadius = configuration.CornerRadius;
+        TrianglePath.Fill = configuration.BackgroundColor;
     }
 }
