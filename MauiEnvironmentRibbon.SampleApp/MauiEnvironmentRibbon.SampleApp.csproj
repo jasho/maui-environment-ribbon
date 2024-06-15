@@ -67,8 +67,11 @@
 	  <Compile Update="Controls\EnvironmentRibbon.xaml.cs">
 	    <DependentUpon>EnvironmentRibbon.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="MainPage.xaml.cs">
+	  <Compile Update="Pages\MainPage.xaml.cs">
 	    <DependentUpon>MainPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ContentPageWithGrid.xaml.cs">
+	    <DependentUpon>ContentPageWithGrid.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -76,7 +79,7 @@
 	  <MauiXaml Update="Controls\EnvironmentRibbon.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Page2.xaml">
+	  <MauiXaml Update="Pages\ContentPageWithGrid.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

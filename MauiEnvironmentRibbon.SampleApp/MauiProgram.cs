@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiEnvironmentRibbon.SampleApp.Pages;
+using Microsoft.Extensions.Logging;
 
 namespace MauiEnvironmentRibbon.SampleApp
 {
@@ -20,11 +21,11 @@ namespace MauiEnvironmentRibbon.SampleApp
 #endif
             
             builder.Services.AddTransient<MainPage>();
-            builder.Services.AddTransient<Page2>();
+            builder.Services.AddTransient<ContentPageWithGrid>();
 
             var app = builder.Build();
 
-            Routing.RegisterRoute("page2", typeof(Page2));
+            Routing.RegisterRoute(ContentPageWithGrid.Route, typeof(ContentPageWithGrid));
 
             return app;
         }

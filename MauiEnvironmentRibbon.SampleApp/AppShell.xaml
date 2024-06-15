@@ -2,11 +2,11 @@
 <Shell x:Class="MauiEnvironmentRibbon.SampleApp.AppShell"
        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:local="clr-namespace:MauiEnvironmentRibbon.SampleApp"
+       xmlns:pages="using:MauiEnvironmentRibbon.SampleApp.Pages"
        Title="MauiEnvironmentRibbon.SampleApp"
-       Shell.FlyoutBehavior="Disabled">
+       FlyoutBehavior="Disabled">
 
     <ShellContent Title="Home"
-                  ContentTemplate="{DataTemplate local:MainPage}"
+                  ContentTemplate="{DataTemplate pages:MainPage}"
                   Route="main"/>
 </Shell>
