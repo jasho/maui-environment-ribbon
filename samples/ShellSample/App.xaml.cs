@@ -1,4 +1,4 @@
-﻿namespace MauiEnvironmentRibbon.SampleApp
+﻿namespace MauiEnvironmentRibbon.ShellSample
 {
     public partial class App
     {

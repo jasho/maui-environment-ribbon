@@ -1,4 +1,4 @@
-namespace MauiEnvironmentRibbon.SampleApp.Pages;
+namespace MauiEnvironmentRibbon.ShellSample.Pages;
 
 public partial class ContentPageWithGrid
 {

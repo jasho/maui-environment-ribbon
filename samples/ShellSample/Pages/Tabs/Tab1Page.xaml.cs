@@ -1,4 +1,4 @@
-namespace MauiEnvironmentRibbon.SampleApp.Pages.Tabs;
+namespace MauiEnvironmentRibbon.ShellSample.Pages.Tabs;
 
 public partial class Tab1Page : ContentPage
 {

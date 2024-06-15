@@ -1,7 +1,7 @@
-﻿using MauiEnvironmentRibbon.SampleApp.Pages;
+﻿using MauiEnvironmentRibbon.ShellSample.Pages;
 using Microsoft.Extensions.Logging;
 
-namespace MauiEnvironmentRibbon.SampleApp
+namespace MauiEnvironmentRibbon.ShellSample
 {
     public static class MauiProgram
     {

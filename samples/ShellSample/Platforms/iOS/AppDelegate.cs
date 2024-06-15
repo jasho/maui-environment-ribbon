@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using MauiEnvironmentRibbon.ShellSample;
 
 namespace MauiEnvironmentRibbon.SampleApp
 {

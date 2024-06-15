@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell x:Class="MauiEnvironmentRibbon.SampleApp.AppShell"
+<Shell x:Class="MauiEnvironmentRibbon.ShellSample.AppShell"
        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:pages="using:MauiEnvironmentRibbon.SampleApp.Pages"
-       xmlns:tabs="using:MauiEnvironmentRibbon.SampleApp.Pages.Tabs"
+       xmlns:pages="clr-namespace:MauiEnvironmentRibbon.ShellSample.Pages"
+       xmlns:tabs="clr-namespace:MauiEnvironmentRibbon.ShellSample.Pages.Tabs"
        Title="MauiEnvironmentRibbon.SampleApp"
        FlyoutBehavior="Flyout">
     <FlyoutItem Title="Main">

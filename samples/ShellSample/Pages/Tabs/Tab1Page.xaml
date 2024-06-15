@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="MauiEnvironmentRibbon.SampleApp.Pages.ContentPageWithGrid"
+<ContentPage x:Class="MauiEnvironmentRibbon.ShellSample.Pages.Tabs.Tab1Page"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="ContentPageWithGrid">
-    <Grid>
+             Title="Tab1Page">
+    <VerticalStackLayout>
         <Label HorizontalOptions="Center"
                VerticalOptions="Center"
-               Text="Content Page with Grid"/>
-    </Grid>
+               Text="Tab 1"/>
+    </VerticalStackLayout>
 </ContentPage>
