@@ -1,6 +1,8 @@
-﻿namespace MauiEnvironmentRibbon.NavigationPageSample.Pages
+﻿using MauiEnvironmentRibbon.NavigationPageSample.Pages.Tabs;
+
+namespace MauiEnvironmentRibbon.NavigationPageSample.Pages
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage
     {
         public MainPage()
         {
@@ -10,6 +12,11 @@
         private void NavigateToContentPageWithGridClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ContentPageWithGrid());
+        }
+
+        private void NavigateToTabbedPageClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainTabbedPage());
         }
     }
 }

@@ -7,7 +7,7 @@
             <Button HorizontalOptions="Fill"
                     Clicked="GoToContentPageWithGridClicked"
                     SemanticProperties.Hint="Counts the number of times you click"
-                    Text="Go to ContentPageWithGrid"/>
+                    Text="Go to Content Page with Grid"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -4,9 +4,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
-            <Button HorizontalOptions="Fill"
-                    Clicked="NavigateToContentPageWithGridClicked"
-                    Text="Go to ContentPageWithGrid"/>
+            <Button Clicked="NavigateToContentPageWithGridClicked" Text="Navigate to Content Page with Grid"/>
+
+            <Button Clicked="NavigateToTabbedPageClicked" Text="Navigate to Tabbed Page"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

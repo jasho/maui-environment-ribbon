@@ -60,9 +60,13 @@ public class EnvironmentRibbonService
 
     public static void AddEnvironmentRibbonToPage(Page? page)
     {
-        if (page is ContentPage contentPage
-            && contentPage.GetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty) is false
-            && configuration is not null)
+        if (configuration is null
+            || page?.GetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty) is true)
+        {
+            return;
+        }
+
+        if (page is ContentPage contentPage)
         {
             if (contentPage.Content is Grid rootGrid)
             {
@@ -78,6 +82,18 @@ public class EnvironmentRibbonService
             }
 
             page.SetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty, true);
+        }
+        else if (page is NavigationPage navigationPage)
+        {
+            navigationPage.Pushed += NavigationPage_Pushed;
+            AddEnvironmentRibbonToPage(navigationPage.CurrentPage);
+        }
+        else if (page is TabbedPage tabbedPage)
+        {
+            foreach (var child in tabbedPage.Children)
+            {
+                AddEnvironmentRibbonToPage(child);
+            }
         }
     }
 }
