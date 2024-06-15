@@ -1,4 +1,5 @@
-﻿using MauiEnvironmentRibbon.NavigationPageSample.Pages.Tabs;
+﻿using MauiEnvironmentRibbon.NavigationPageSample.Pages.Flyouts;
+using MauiEnvironmentRibbon.NavigationPageSample.Pages.Tabs;
 
 namespace MauiEnvironmentRibbon.NavigationPageSample.Pages
 {
@@ -17,6 +18,11 @@ namespace MauiEnvironmentRibbon.NavigationPageSample.Pages
         private void NavigateToTabbedPageClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainTabbedPage());
+        }
+
+        private void NavigateToFlyoutPageClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainFlyoutPage());
         }
     }
 }

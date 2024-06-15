@@ -9,7 +9,7 @@ public class EnvironmentRibbonService
 
     public static void SetConfiguration(EnvironmentRibbonType environmentRibbonType)
     {
-        configuration = GetConfiguration(environmentRibbonType);
+        configuration ??= GetConfiguration(environmentRibbonType);
     }
 
     public static void SetConfiguration(EnvironmentRibbonConfiguration configuration)
@@ -94,6 +94,10 @@ public class EnvironmentRibbonService
             {
                 AddEnvironmentRibbonToPage(child);
             }
+        }
+        else if (page is FlyoutPage flyoutPage)
+        {
+            AddEnvironmentRibbonToPage(flyoutPage.Detail);
         }
     }
 }

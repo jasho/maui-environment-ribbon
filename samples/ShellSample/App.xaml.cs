@@ -1,4 +1,6 @@
-﻿namespace MauiEnvironmentRibbon.ShellSample
+﻿using MauiEnvironmentRibbon.Extensions;
+
+namespace MauiEnvironmentRibbon.ShellSample
 {
     public partial class App
     {

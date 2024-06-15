@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage x:Class="MauiEnvironmentRibbon.NavigationPageSample.Pages.Flyouts.MainFlyoutPage"
+            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:flyouts="clr-namespace:MauiEnvironmentRibbon.NavigationPageSample.Pages.Flyouts"
+            NavigationPage.HasNavigationBar="False">
+    <FlyoutPage.Flyout>
+        <flyouts:FlyoutMenuPage x:Name="FlyoutPage"/>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <flyouts:Flyout1Page/>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

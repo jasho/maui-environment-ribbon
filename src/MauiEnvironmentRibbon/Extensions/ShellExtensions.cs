@@ -1,4 +1,4 @@
-﻿namespace MauiEnvironmentRibbon;
+﻿namespace MauiEnvironmentRibbon.Extensions;
 
 public static class ShellExtensions
 {

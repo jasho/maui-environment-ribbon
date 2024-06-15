@@ -1,4 +1,6 @@
-﻿using MauiEnvironmentRibbon.NavigationPageSample.Pages;
+﻿using MauiEnvironmentRibbon.Extensions;
+using MauiEnvironmentRibbon.NavigationPageSample.Pages;
+using MauiEnvironmentRibbon.NavigationPageSample.Pages.Flyouts;
 
 namespace MauiEnvironmentRibbon.NavigationPageSample
 {
@@ -8,10 +10,12 @@ namespace MauiEnvironmentRibbon.NavigationPageSample
         {
             InitializeComponent();
 
-            var navigationPage = new NavigationPage(new MainPage())
-                .AddEnvironmentRibbon(EnvironmentRibbonType.Alpha);
+            var mainPage = new NavigationPage(new MainPage()).AddEnvironmentRibbon(EnvironmentRibbonType.Alpha);
 
-            MainPage = navigationPage;
+            // Use this initialization to test out flyout page with hamburger menu
+            //var mainPage = new MainFlyoutPage().AddEnvironmentRibbon(EnvironmentRibbonType.Alpha);
+
+            MainPage = mainPage;
         }
     }
 }

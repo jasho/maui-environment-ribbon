@@ -7,6 +7,8 @@
             <Button Clicked="NavigateToContentPageWithGridClicked" Text="Navigate to Content Page with Grid"/>
 
             <Button Clicked="NavigateToTabbedPageClicked" Text="Navigate to Tabbed Page"/>
+
+            <Button Clicked="NavigateToFlyoutPageClicked" Text="Navigate to Flyout Page"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
