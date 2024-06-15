@@ -68,18 +68,11 @@ public class EnvironmentRibbonService
 
         if (page is ContentPage contentPage)
         {
-            if (contentPage.Content is Grid rootGrid)
-            {
-                rootGrid.Children.Add(new EnvironmentRibbon(configuration));
-            }
-            else
-            {
-                var newRootGrid = new Grid();
+            var newRootGrid = new Grid();
 
-                newRootGrid.Children.Add(contentPage.Content);
-                newRootGrid.Children.Add(new EnvironmentRibbon(configuration));
-                contentPage.Content = newRootGrid;
-            }
+            newRootGrid.Children.Add(contentPage.Content);
+            newRootGrid.Children.Add(new EnvironmentRibbon(configuration));
+            contentPage.Content = newRootGrid;
 
             page.SetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty, true);
         }
