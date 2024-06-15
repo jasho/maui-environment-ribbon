@@ -64,7 +64,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\MauiEnvironmentRibbon\MauiEnvironmentRibbon.csproj" />
+	  <ProjectReference Include="..\..\src\MauiEnvironmentRibbon\MauiEnvironmentRibbon.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
