@@ -7,7 +7,7 @@
             InitializeComponent();
 
             var appShell = new AppShell()
-                .AddEnvironmentRibbon();
+                .AddEnvironmentRibbon(EnvironmentRibbonType.Beta);
 
             MainPage = appShell;
         }

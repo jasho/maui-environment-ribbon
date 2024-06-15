@@ -18,8 +18,15 @@ public partial class EnvironmentRibbon
         view.SetValue(IsEnvironmentRibbonAddedProperty, value);
     }
 
-    public EnvironmentRibbon()
+    public EnvironmentRibbon(EnvironmentRibbonConfiguration configuration)
     {
         InitializeComponent();
+
+        BackgroundColor = configuration.BackgroundColor;
+
+        EnvironmentLabel.Text = configuration.Text;
+        EnvironmentLabel.TextColor = configuration.TextColor;
+
+        BorderStrokeShape.CornerRadius = configuration.CornerRadius;
     }
 }

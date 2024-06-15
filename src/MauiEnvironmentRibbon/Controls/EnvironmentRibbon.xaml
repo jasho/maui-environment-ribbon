@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<Grid x:Class="MauiEnvironmentRibbon.Controls.EnvironmentRibbon"
-      xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-      HorizontalOptions="End"
-      VerticalOptions="Start"
-      Padding="10"
-      BackgroundColor="Red">
-    <Label Text="Test" TextColor="White"/>
-</Grid>
+<Border x:Class="MauiEnvironmentRibbon.Controls.EnvironmentRibbon"
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        HorizontalOptions="End"
+        VerticalOptions="Start"
+        Padding="10"
+        StrokeThickness="0">
+    <Border.StrokeShape>
+        <RoundRectangle x:Name="BorderStrokeShape"/>
+    </Border.StrokeShape>
+
+    <Label x:Name="EnvironmentLabel"/>
+</Border>
