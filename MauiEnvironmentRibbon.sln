@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{7968
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiEnvironmentRibbon.ShellSample", "samples\ShellSample\MauiEnvironmentRibbon.ShellSample.csproj", "{9124C9B9-C9BD-43D8-9A94-D55F7220C990}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiEnvironmentRibbon.NavigationPageSample", "samples\NavigationPageSample\MauiEnvironmentRibbon.NavigationPageSample.csproj", "{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,12 +26,19 @@ Global
 		{9124C9B9-C9BD-43D8-9A94-D55F7220C990}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9124C9B9-C9BD-43D8-9A94-D55F7220C990}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9124C9B9-C9BD-43D8-9A94-D55F7220C990}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9124C9B9-C9BD-43D8-9A94-D55F7220C990} = {79683077-BD3C-4769-9B5C-1CDBB19E904D}
+		{6A0DBC74-E59E-4E0A-98CA-9F07A8F82015} = {79683077-BD3C-4769-9B5C-1CDBB19E904D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {811753A5-19F4-4BF7-A1CD-46E280224174}
