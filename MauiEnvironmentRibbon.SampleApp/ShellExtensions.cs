@@ -14,7 +14,11 @@ public static class ShellExtensions
     {
         if (sender is Shell { CurrentPage: not null } shell)
         {
-            AddEnvironmentRibbonToPage(shell.CurrentPage);
+            if (shell.CurrentPage.GetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty) is false)
+            {
+                AddEnvironmentRibbonToPage(shell.CurrentPage);
+                shell.CurrentPage.SetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty, true);
+            }
         }
     }
 
