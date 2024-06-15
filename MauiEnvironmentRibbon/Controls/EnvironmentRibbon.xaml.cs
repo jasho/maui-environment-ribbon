@@ -1,4 +1,4 @@
-﻿namespace MauiEnvironmentRibbon.SampleApp.Controls;
+﻿namespace MauiEnvironmentRibbon.Controls;
 
 public partial class EnvironmentRibbon
 {

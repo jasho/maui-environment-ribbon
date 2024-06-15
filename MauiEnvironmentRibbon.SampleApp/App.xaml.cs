@@ -8,6 +8,7 @@
 
             var appShell = new AppShell()
                 .AddEnvironmentRibbon();
+
             MainPage = appShell;
         }
     }

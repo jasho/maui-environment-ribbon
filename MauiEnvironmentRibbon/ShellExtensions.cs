@@ -1,6 +1,6 @@
-﻿using MauiEnvironmentRibbon.SampleApp.Controls;
+﻿using MauiEnvironmentRibbon.Controls;
 
-namespace MauiEnvironmentRibbon.SampleApp;
+namespace MauiEnvironmentRibbon;
 
 public static class ShellExtensions
 {
