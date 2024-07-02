@@ -7,9 +7,9 @@ public class EnvironmentRibbonService
 {
     private static EnvironmentRibbonConfiguration? _configuration;
 
-    public static void SetConfiguration(EnvironmentRibbonType environmentRibbonType)
+    public static void SetConfiguration(EnvironmentRibbonType environmentRibbonType, EnvironmentRibbonPosition environmentRibbonPosition)
     {
-        SetConfiguration(GetConfiguration(environmentRibbonType));
+        SetConfiguration(CreateConfiguration(environmentRibbonType, environmentRibbonPosition));
     }
 
     public static void SetConfiguration(EnvironmentRibbonConfiguration configuration)
@@ -17,7 +17,7 @@ public class EnvironmentRibbonService
         _configuration ??= configuration;
     }
 
-    private static EnvironmentRibbonConfiguration GetConfiguration(EnvironmentRibbonType environmentRibbonType)
+    private static EnvironmentRibbonConfiguration CreateConfiguration(EnvironmentRibbonType environmentRibbonType, EnvironmentRibbonPosition environmentRibbonPosition)
     {
         var configuration = environmentRibbonType switch
         {
@@ -41,6 +41,7 @@ public class EnvironmentRibbonService
         };
 
         configuration.Text = AppInfo.Current.VersionString;
+        configuration.Position = environmentRibbonPosition;
 
         return configuration;
     }

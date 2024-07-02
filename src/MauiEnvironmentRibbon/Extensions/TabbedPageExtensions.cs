@@ -2,9 +2,9 @@
 
 public static class TabbedPageExtensions
 {
-    public static TabbedPage AddEnvironmentRibbon(this TabbedPage tabbedPage, EnvironmentRibbonType environmentRibbonType)
+    public static TabbedPage AddEnvironmentRibbon(this TabbedPage tabbedPage, EnvironmentRibbonType environmentRibbonType, EnvironmentRibbonPosition environmentRibbonPosition)
     {
-        EnvironmentRibbonService.SetConfiguration(environmentRibbonType);
+        EnvironmentRibbonService.SetConfiguration(environmentRibbonType, environmentRibbonPosition);
         foreach (var child in tabbedPage.Children)
         {
             EnvironmentRibbonService.AddEnvironmentRibbonToPage(child);

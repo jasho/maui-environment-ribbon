@@ -17,7 +17,7 @@ public partial class MainFlyoutPage
         if (e.CurrentSelection.FirstOrDefault() is FlyoutMenuPageItemModel item)
         {
             var navigationPage = new NavigationPage(Activator.CreateInstance(item.TargetType) as Page);
-            navigationPage.AddEnvironmentRibbon(EnvironmentRibbonType.Alpha);
+            navigationPage.AddEnvironmentRibbon();
 
             Detail = navigationPage;
             IsPresented = false;

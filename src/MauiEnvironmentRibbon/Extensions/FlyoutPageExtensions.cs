@@ -2,9 +2,9 @@
 
 public static class FlyoutPageExtensions
 {
-    public static FlyoutPage AddEnvironmentRibbon(this FlyoutPage flyoutPage, EnvironmentRibbonType environmentRibbonType)
+    public static FlyoutPage AddEnvironmentRibbon(this FlyoutPage flyoutPage, EnvironmentRibbonType environmentRibbonType, EnvironmentRibbonPosition environmentRibbonPosition)
     {
-        EnvironmentRibbonService.SetConfiguration(environmentRibbonType);
+        EnvironmentRibbonService.SetConfiguration(environmentRibbonType, environmentRibbonPosition);
         EnvironmentRibbonService.AddEnvironmentRibbonToPage(flyoutPage.Detail);
 
         return flyoutPage;

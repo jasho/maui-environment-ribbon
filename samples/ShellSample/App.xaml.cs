@@ -9,7 +9,7 @@ namespace MauiEnvironmentRibbon.ShellSample
             InitializeComponent();
 
             var appShell = new AppShell()
-                .AddEnvironmentRibbon(EnvironmentRibbonType.Beta);
+                .AddEnvironmentRibbon(EnvironmentRibbonType.Beta, EnvironmentRibbonPosition.BottomRight);
 
             MainPage = appShell;
         }
