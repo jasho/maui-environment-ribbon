@@ -14,7 +14,7 @@ namespace MauiEnvironmentRibbon.NavigationPageSample
                 .AddEnvironmentRibbon(EnvironmentRibbonType.Alpha, EnvironmentRibbonPosition.TopLeft);
 
             // Use this initialization to test out flyout page with hamburger menu
-            //var mainPage = new MainFlyoutPage().AddEnvironmentRibbon(EnvironmentRibbonType.Alpha);
+            //var mainPage = new MainFlyoutPage().AddEnvironmentRibbon(EnvironmentRibbonType.Alpha, EnvironmentRibbonPosition.TopLeft);
 
             MainPage = mainPage;
         }

@@ -3,11 +3,7 @@
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="ContentPageWithGrid">
-    <Grid>
-        <VerticalStackLayout>
-            <Label HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   Text="Welcome to .NET MAUI!"/>
-        </VerticalStackLayout>
+    <Grid Padding="30,0">
+        <Image Source="cat_02"/>
     </Grid>
 </ContentPage>

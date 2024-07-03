@@ -3,10 +3,12 @@
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Tab 1">
-    <VerticalStackLayout>
-        <Label HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Text="Tab 1"/>
-        <Button Clicked="NavigateToTab1InnerPageClicked" Text="Navigate to inner page"/>
-    </VerticalStackLayout>
+    <Grid Padding="30,0">
+        <Button HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Clicked="NavigateToTab1InnerPageClicked"
+                Text="Navigate to inner page"/>
+
+        <Image Source="cat_03"/>
+    </Grid>
 </ContentPage>

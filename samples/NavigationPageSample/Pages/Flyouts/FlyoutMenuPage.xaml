@@ -10,15 +10,26 @@
                     SelectionMode="Single">
         <CollectionView.ItemsSource>
             <x:Array Type="{x:Type models:FlyoutMenuPageItemModel}">
-                <models:FlyoutMenuPageItemModel Title="Flyout 1" TargetType="{x:Type flyouts:Flyout1Page}"/>
-                <models:FlyoutMenuPageItemModel Title="Flyout 2" TargetType="{x:Type flyouts:Flyout2Page}"/>
-                <models:FlyoutMenuPageItemModel Title="Flyout 3" TargetType="{x:Type flyouts:Flyout3Page}"/>
+                <models:FlyoutMenuPageItemModel Title="Flyout 1"
+                                                IconSource="cat_03"
+                                                TargetType="{x:Type flyouts:Flyout1Page}"/>
+                <models:FlyoutMenuPageItemModel Title="Flyout 2"
+                                                IconSource="cat_04"
+                                                TargetType="{x:Type flyouts:Flyout2Page}"/>
+                <models:FlyoutMenuPageItemModel Title="Flyout 3"
+                                                IconSource="cat_05"
+                                                TargetType="{x:Type flyouts:Flyout3Page}"/>
             </x:Array>
         </CollectionView.ItemsSource>
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="models:FlyoutMenuPageItemModel">
-                <Grid Padding="5,10">
-                    <Label VerticalOptions="Center"
+                <Grid Padding="5,10"
+                      ColumnDefinitions="50, *"
+                      ColumnSpacing="10">
+                    <Image Grid.Column="0" Source="{Binding IconSource}"/>
+
+                    <Label Grid.Column="1"
+                           VerticalOptions="Center"
                            FontAttributes="Bold"
                            FontSize="20"
                            Text="{Binding Title}"/>

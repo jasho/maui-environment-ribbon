@@ -3,11 +3,11 @@
             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:tabs="clr-namespace:MauiEnvironmentRibbon.NavigationPageSample.Pages.Tabs">
-    <NavigationPage Title="Tab 1">
+    <NavigationPage Title="Tab 1" IconImageSource="cat_03">
         <x:Arguments>
             <tabs:Tab1Page/>
         </x:Arguments>
     </NavigationPage>
 
-    <tabs:Tab2Page/>
+    <tabs:Tab2Page IconImageSource="cat_04"/>
 </TabbedPage>
