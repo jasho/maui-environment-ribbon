@@ -6,13 +6,13 @@
        xmlns:tabs="clr-namespace:MauiEnvironmentRibbon.ShellSample.Pages.Tabs"
        Title="MauiEnvironmentRibbon.SampleApp"
        FlyoutBehavior="Flyout">
-    <FlyoutItem Title="Main">
+    <FlyoutItem Title="Main" Icon="cat_01">
         <ShellContent Title="Home"
                       ContentTemplate="{DataTemplate pages:MainPage}"
                       Route="main"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Tabs">
+    <FlyoutItem Title="Tabs" Icon="cat_03">
         <Tab Title="Tab 1">
             <ShellContent ContentTemplate="{DataTemplate tabs:Tab1Page}" Route="tab1"/>
         </Tab>
