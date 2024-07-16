@@ -24,5 +24,6 @@ More about the control can be found in the associated blog posts here:
 - https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-intro-and-basic-ui-part-1
 - https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-shell-integration-part-2
 - https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-navigationpage-integration-part-3
-
+- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-ui-customization-part-4
+- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-optimization-and-wrap-up-part-5
 
