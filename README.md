@@ -2,7 +2,7 @@ Environment Ribbon is a simple control that lets us add basic information that v
 We can just call the extension method `AddEnvironmentRibbon()` on Shell or NavigationPage. The control gets automatically propagated to all the subsequent pages whether we use Shell or NavigationPage for navigation.
 
 Environment Ribbon is intended to be used in non-production environments such as development, alpha, beta to visually determine which environment the app is running in.
-The easiest way to use it is to use the overload with EnvironmentRibbonType as first parameter and EnvironmentRibbonPosition as second parameter i.e.:
+The easiest way to use it is to use the overload with `EnvironmentRibbonType` as first parameter and `EnvironmentRibbonPosition` as second parameter i.e.:
 ```csharp
 .AddEnvironmentRibbon(EnvironmentRibbonType.Alpha, EnvironmentRibbonPosition.TopRight)
 ```
