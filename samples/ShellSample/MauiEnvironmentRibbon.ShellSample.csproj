@@ -21,10 +21,10 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>MauiEnvironmentRibbon.ShellSample</ApplicationTitle>
+		<ApplicationTitle>MER ShellSample</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mauienvironmentribbon.shellsample</ApplicationId>
+		<ApplicationId>com.mauienvironmentribbon.shellsample</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
