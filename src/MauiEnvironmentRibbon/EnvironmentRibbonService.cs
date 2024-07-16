@@ -77,8 +77,6 @@ public class EnvironmentRibbonService
             newRootGrid.Children.Add(contentPage.Content);
             newRootGrid.Children.Add(new EnvironmentRibbon(_configuration));
             contentPage.Content = newRootGrid;
-
-            page.SetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty, true);
         }
         else if (page is NavigationPage navigationPage)
         {
@@ -96,5 +94,7 @@ public class EnvironmentRibbonService
         {
             AddEnvironmentRibbonToPage(flyoutPage.Detail);
         }
+
+        page?.SetValue(EnvironmentRibbon.IsEnvironmentRibbonAddedProperty, true);
     }
 }

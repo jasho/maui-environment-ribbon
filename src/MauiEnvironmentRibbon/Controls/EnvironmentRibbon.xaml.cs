@@ -23,6 +23,7 @@ public partial class EnvironmentRibbon
     public EnvironmentRibbon(EnvironmentRibbonConfiguration configuration)
     {
         InitializeComponent();
+
         EnvironmentLabel.Text = configuration.Text;
         EnvironmentLabel.TextColor = configuration.TextColor;
         RibbonPath.Fill = configuration.BackgroundColor;
