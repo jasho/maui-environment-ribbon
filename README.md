@@ -21,9 +21,9 @@ The control can be seen in action here - it displays just below the navigation b
 The project was created as part of the [MAUIUIJULY](https://goforgoldman.com/posts/mauiuijuly-24/) initiative
 
 More about the control can be found in the associated blog posts here:
-- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-intro-and-basic-ui-part-1
-- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-shell-integration-part-2
-- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-navigationpage-integration-part-3
-- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-ui-customization-part-4
-- https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-optimization-and-wrap-up-part-5
+1. [Intro and basic UI](https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-intro-and-basic-ui-part-1)
+1. [Shell integration](https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-shell-integration-part-2)
+1. [NavigationPage integration](https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-navigationpage-integration-part-3)
+1. [UI customization](https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-ui-customization-part-4)
+1. [Optimization and wrap up](https://www.riganti.cz/en/blog-posts/maui-environment-ribbon-optimization-and-wrap-up-part-5)
 
